@@ -1,3 +1,4 @@
+import SessionProviders from "@/providers/SessionProviders";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Mulish } from "next/font/google";
@@ -16,7 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <SessionProviders>{children}</SessionProviders>
+      </body>
     </html>
   );
 }
