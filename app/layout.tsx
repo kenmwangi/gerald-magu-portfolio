@@ -2,6 +2,7 @@ import SessionProviders from "@/providers/SessionProviders";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Mulish } from "next/font/google";
+import Header from "@/components/Header";
 
 const inter = Mulish({ subsets: ["latin"] });
 
@@ -17,8 +18,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <SessionProviders>{children}</SessionProviders>
+      <body
+        className={`${inter.className} antialised bg-white text-gray-900 tracking-tight`}
+      >
+        <div className="flex flex-col min-h-screen overflow-hidden supports-[overflow:clip]:overflow-clip">
+          <Header />
+          <SessionProviders>{children}</SessionProviders>
+        </div>
       </body>
     </html>
   );
