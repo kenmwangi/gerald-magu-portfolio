@@ -1,5 +1,5 @@
 import SessionProviders from "@/providers/SessionProviders";
-import "./globals.css";
+import "./css/globals.css";
 import type { Metadata } from "next";
 import { Mulish } from "next/font/google";
 import Header from "@/components/Header";
