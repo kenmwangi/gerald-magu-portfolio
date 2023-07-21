@@ -1,7 +1,7 @@
 import SessionProviders from "@/providers/SessionProviders";
 import "./css/globals.css";
 import type { Metadata } from "next";
-import { Mulish } from "next/font/google";
+import { Mulish, Inter } from "next/font/google";
 import Header from "@/components/Header";
 
 const inter = Mulish({ subsets: ["latin"] });

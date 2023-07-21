@@ -3,6 +3,7 @@ import Link from "next/link";
 import Container from "../Container";
 import { v4 as uuidv4 } from "uuid";
 import { useEffect, useState } from "react";
+import MobileMenu from "./MobileMenu";
 const headerItems = [
   { id: uuidv4(), title: "About me", href: "/about" },
   { id: uuidv4(), title: "Projects", href: "/projects" },
@@ -63,6 +64,8 @@ export default function Header() {
               </li>
             </ul>
           </nav>
+          {/* Mobile Menu */}
+          <MobileMenu />
         </section>
       </Container>
     </header>
