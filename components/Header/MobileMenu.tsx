@@ -122,7 +122,7 @@ export default function MobileMenu() {
               </li>
             </div>
           </ul>
-          <footer className="items-end px-5 py-2">
+          <footer className="items-end px-5 py-2 mb-6">
             <div className="flex items-center justify-between mb-10">
               <p className="text-sm text-gray-500 tracking-tight">
                 &copy; Gerald Magu, {new Date().getFullYear()}. All rights
