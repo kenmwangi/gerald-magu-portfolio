@@ -9,12 +9,6 @@ import Link from "next/link";
 const socialLinks = [
   {
     id: uuidv4(),
-    title: "Community & Social Interactions",
-    icon: <MdOutlineForum size={20} />,
-    href: "https://community.andela.com/u/a0516a11?",
-  },
-  {
-    id: uuidv4(),
     title: "Linkedin",
     icon: <FaLinkedinIn size={20} />,
     href: "https://www.linkedin.com/in/magugerald/",
@@ -31,14 +25,20 @@ const socialLinks = [
     icon: <FaTwitter size={20} />,
     href: "https://www.linkedin.com/in/magugerald/",
   },
+  {
+    id: uuidv4(),
+    title: "Community & Social Interactions",
+    icon: <MdOutlineForum size={20} />,
+    href: "https://community.andela.com/u/a0516a11?",
+  },
 ];
 
 export default function LetsConnect() {
   return (
     <div className="bg-slate-700 text-white py-20 lg:py-24">
       <Container>
-        <h3 className="h3 my-5">Let&apos;s Connect</h3>
-        <section className="flex items-center justify-between mt-8 max-w-4xl">
+        <h3 className="h3 mb-12">Let&apos;s Connect</h3>
+        <section className="grid grid-cols-1 gap-8 lg:grid-cols-4 my-8">
           {socialLinks.map((socialLink) => {
             const { id, href, title, icon } = socialLink;
             return (
