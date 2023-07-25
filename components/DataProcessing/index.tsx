@@ -41,7 +41,7 @@ export default function DataProcessing() {
               professional data analysis techniques and analysis.
             </p>
           </div>
-          <div className="grid grid-cols-1 gap-5 md:grid-cols-3 lg:grid-cols-4 my-6">
+          <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 my-6">
             {steps.map((step) => {
               const { id, number, title, info } = step;
               return (
