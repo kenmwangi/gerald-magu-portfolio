@@ -3,6 +3,7 @@ import "./css/globals.css";
 import type { Metadata } from "next";
 import { Mulish, Inter } from "next/font/google";
 import Header from "@/components/Header";
+import Navbar from "@/components/Navbar";
 
 const inter = Mulish({ subsets: ["latin"] });
 
@@ -27,6 +28,7 @@ export default function RootLayout({
       >
         <div className="flex flex-col min-h-screen overflow-hidden supports-[overflow:clip]:overflow-clip">
           {/* <Header /> */}
+
           <SessionProviders>{children}</SessionProviders>
         </div>
       </body>

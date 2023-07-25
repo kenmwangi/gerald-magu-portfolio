@@ -1,3 +1,4 @@
+import Hero from "@/components/Hero";
 import User from "@/components/User";
 import { authOptions } from "@/lib/auth";
 import { getServerSession } from "next-auth";
@@ -8,7 +9,7 @@ export default async function Home() {
 
   return (
     <div>
-      <h1 className="h1">Home</h1>
+      <Hero />
     </div>
   );
 }
