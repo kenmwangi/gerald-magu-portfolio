@@ -1,6 +1,7 @@
 import CaseStudy from "@/components/CaseStudy";
 import DataProcessing from "@/components/DataProcessing";
 import Hero from "@/components/Hero";
+import MySkills from "@/components/MySkills";
 import SellingPoint from "@/components/SellingPoint";
 import User from "@/components/User";
 import { authOptions } from "@/lib/auth";
@@ -16,6 +17,7 @@ export default async function Home() {
       <CaseStudy />
       <DataProcessing />
       <SellingPoint />
+      <MySkills />
     </div>
   );
 }
