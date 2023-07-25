@@ -8,11 +8,7 @@ export default async function Home() {
 
   return (
     <div>
-      <h1 className="bg-rose-50/90 text-black">Home</h1>
-      <pre>{JSON.stringify(session)}</pre>
-
-      <h2 className="mt-5 font-bold text-2xl">Client Component session</h2>
-      <User />
+      <h1 className="h1">Home</h1>
     </div>
   );
 }
