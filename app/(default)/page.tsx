@@ -1,3 +1,4 @@
+import CaseStudy from "@/components/CaseStudy";
 import Hero from "@/components/Hero";
 import User from "@/components/User";
 import { authOptions } from "@/lib/auth";
@@ -10,6 +11,7 @@ export default async function Home() {
   return (
     <div>
       <Hero />
+      <CaseStudy />
     </div>
   );
 }

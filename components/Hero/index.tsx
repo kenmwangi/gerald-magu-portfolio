@@ -2,11 +2,18 @@ import React from "react";
 import Container from "../Container";
 import Navbar from "../Navbar";
 import { v4 as uuidv4 } from "uuid";
+import { FcStatistics } from "react-icons/fc";
+import { GiArchiveResearch } from "react-icons/gi";
+import { MdDataExploration } from "react-icons/md";
 
 const roles = [
-  { id: uuidv4(), title: "Data Scientist" },
-  { id: uuidv4(), title: "Researcher" },
-  { id: uuidv4(), title: "Business Analyst" },
+  { id: uuidv4(), title: "Data Scientist", icon: <FcStatistics size={18} /> },
+  { id: uuidv4(), title: "Researcher", icon: <GiArchiveResearch size={18} /> },
+  {
+    id: uuidv4(),
+    title: "Business Analyst",
+    icon: <MdDataExploration size={18} />,
+  },
 ];
 
 export default function Hero() {
@@ -21,12 +28,16 @@ export default function Hero() {
               Gerald
             </span>
           </h1>
-          <div className="flex gap-4">
+          <div className="flex gap-6">
             {roles.map((role) => {
-              const { id, title } = role;
+              const { id, title, icon } = role;
               return (
-                <h2 key={id} className="text-sm lg:text-lg text-[#8575ff]">
-                  {title}
+                <h2
+                  key={id}
+                  className="text-xs flex flex-col gap-2 lg:flex-row items-center lg:text-lg text-[#8575ff]"
+                >
+                  <span className="order-1 text-white">{title}</span>
+                  <span className="text-white">{icon}</span>
                 </h2>
               );
             })}
