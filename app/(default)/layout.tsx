@@ -22,7 +22,7 @@ export default function DefaultLayout({ children }: DefaultLayoutProps) {
   }, []);
 
   return (
-    <main className="grow h-[1400px]">
+    <main className="grow">
       {children}
       <Banner />
     </main>

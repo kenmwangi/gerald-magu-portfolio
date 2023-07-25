@@ -1,4 +1,5 @@
 import CaseStudy from "@/components/CaseStudy";
+import DataProcessing from "@/components/DataProcessing";
 import Hero from "@/components/Hero";
 import User from "@/components/User";
 import { authOptions } from "@/lib/auth";
@@ -12,6 +13,7 @@ export default async function Home() {
     <div>
       <Hero />
       <CaseStudy />
+      <DataProcessing />
     </div>
   );
 }

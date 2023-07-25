@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Mulish, Inter } from "next/font/google";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const inter = Mulish({ subsets: ["latin"] });
 
@@ -30,6 +31,7 @@ export default function RootLayout({
           {/* <Header /> */}
 
           <SessionProviders>{children}</SessionProviders>
+          <Footer />
         </div>
       </body>
     </html>
