@@ -34,9 +34,9 @@ export default function DataProcessing() {
     <div className="bg-slate-800 text-white">
       <Container>
         <section className="py-16 lg:pt-20">
-          <div className="max-w-3xl">
+          <div className="max-w-2xl">
             <h2 className="h2 mb-5">Step-by-step Data Analysis Process</h2>
-            <p className=" text-lg lg:text-2xl my-10">
+            <p className="text-base lg:text-xl my-10 lg:my-12 text-gray-400">
               Completing tasks one by one while gaining useful insights with a
               professional data analysis techniques and analysis.
             </p>
@@ -50,8 +50,10 @@ export default function DataProcessing() {
                   className="bg-slate-700/50 hover:bg-slate-700/70 transition-colors p-3 flex flex-col gap-5"
                 >
                   <p className="text-gray-300">{number}</p>
-                  <h3 className="h3 grow hover:text-gray-300">{title}</h3>
-                  <p className="grow hover:text-gray-300">{info}</p>
+                  <h3 className="h3 grow  hover:text-gray-300">{title}</h3>
+                  <p className="grow text-gray-200 hover:text-gray-300">
+                    {info}
+                  </p>
                 </article>
               );
             })}

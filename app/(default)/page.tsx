@@ -1,6 +1,7 @@
 import CaseStudy from "@/components/CaseStudy";
 import DataProcessing from "@/components/DataProcessing";
 import Hero from "@/components/Hero";
+import LetsConnect from "@/components/LetsConnect";
 import MySkills from "@/components/MySkills";
 import SellingPoint from "@/components/SellingPoint";
 import User from "@/components/User";
@@ -18,6 +19,7 @@ export default async function Home() {
       <DataProcessing />
       <SellingPoint />
       <MySkills />
+      <LetsConnect />
     </div>
   );
 }
