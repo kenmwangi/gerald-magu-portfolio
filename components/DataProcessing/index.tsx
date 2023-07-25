@@ -47,7 +47,7 @@ export default function DataProcessing() {
               return (
                 <article
                   key={id}
-                  className="bg-slate-700 hover:bg-slate-700/70 transition-colors p-3 flex flex-col gap-5"
+                  className="bg-slate-700/50 hover:bg-slate-700/70 transition-colors p-3 flex flex-col gap-5"
                 >
                   <p className="text-gray-300">{number}</p>
                   <h3 className="h3 grow hover:text-gray-300">{title}</h3>

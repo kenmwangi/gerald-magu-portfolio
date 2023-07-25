@@ -66,7 +66,7 @@ export default function CaseStudy() {
             );
           })}
         </section>
-        <div>
+        <div className="flex flex-col lg:flex-row w-full">
           <button className="btn rounded-full my-6 text-white bg-slate-900 hover:bg-slate-700 transition-colors">
             View all projects
           </button>
