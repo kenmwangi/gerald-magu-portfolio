@@ -9,7 +9,7 @@ export default function Navbar() {
         <Logo />
       </div>
       <h2 className="text-sm lg:text-xl hover:text-gray-100 hover:underline hover:underline-offset-8 transition font-extrabold">
-        <Link href="/contact" className="tracking-wide">
+        <Link href="/projects" className="tracking-wide">
           Explore &rarr;
         </Link>
       </h2>
