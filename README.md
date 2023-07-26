@@ -4,7 +4,7 @@
 
 # Gerald Magu Personal Portfolio
 
-This project is a portfolio showcasing the Data Science and Machine Learning contributions of Magu Gerald.
+A portfolio showcasing the Data Science and Machine Learning contributions of Magu Gerald.
 
 ![Magu Gerald](/gerald.png)
 
@@ -27,11 +27,11 @@ https://gerald-magu-portfolio.vercel.app/
 
 ## Lessons Learned
 
-Nextjs 13 makes the development journey seamless and it has advanced features such as adoption of **React server components** functionalities.
+Nextjs 13 makes the development journey seamless and has advanced features such as adopting **React server components** functionalities.
 
 ## Support
 
-For support, email magugerald@gmail.com or reach me through twitter.
+For support, email magugerald@gmail.com or reach me through Twitter.
 
 ## Developer
 
